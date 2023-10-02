@@ -60,17 +60,17 @@ Welcome to the Music Recommendation App! This Android application, developed usi
 ### Auth Page
 ![Screenshot 2]([/path/to/screenshot2.png](https://github.com/mahmedmo/reccify/blob/master/images/auth.png))
 ### Login Page
-![Screenshot 3]([/path/to/screenshot2.png](https://github.com/mahmedmo/reccify/blob/master/images/login.png))
+![Screenshot 3]([/path/to/screenshot3.png](https://github.com/mahmedmo/reccify/blob/master/images/login.png))
 ### Preference Selection Page
-![Screenshot 4]([/path/to/screenshot2.png](https://github.com/mahmedmo/reccify/blob/master/images/pref.png))
+![Screenshot 4]([/path/to/screenshot4.png](https://github.com/mahmedmo/reccify/blob/master/images/pref.png))
 ### Home Page
-![Screenshot 5]([/path/to/screenshot2.png](https://github.com/mahmedmo/reccify/blob/master/images/home.png))
+![Screenshot 5]([/path/to/screenshot5.png](https://github.com/mahmedmo/reccify/blob/master/images/home.png))
 ### Help Page
-![Screenshot 6]([/path/to/screenshot2.png](https://github.com/mahmedmo/reccify/blob/master/images/help.png))
+![Screenshot 6]([/path/to/screenshot6.png](https://github.com/mahmedmo/reccify/blob/master/images/help.png))
 ### Account Page
-![Screenshot 7]([/path/to/screenshot2.png](https://github.com/mahmedmo/reccify/blob/master/images/account.png))
+![Screenshot 7]([/path/to/screenshot7.png](https://github.com/mahmedmo/reccify/blob/master/images/account.png))
 ### Saved Songs Page
-![Screenshot 8]([/path/to/screenshot2.png](https://github.com/mahmedmo/reccify/blob/master/images/savedsongs.png))
+![Screenshot 8]([/path/to/screenshot8.png](https://github.com/mahmedmo/reccify/blob/master/images/savedsongs.png))
 
 
 
