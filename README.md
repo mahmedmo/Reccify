@@ -55,22 +55,22 @@ Welcome to the Music Recommendation App! This Android application, developed usi
 
 ## Screenshots
 
-### Welcome Page
-![Screenshot 1]([/path/to/screenshot1.png](https://github.com/mahmedmo/reccify/blob/master/images/welcome.png))
-### Auth Page
-![Screenshot 2]([/path/to/screenshot2.png](https://github.com/mahmedmo/reccify/blob/master/images/auth.png))
-### Login Page
-![Screenshot 3]([/path/to/screenshot3.png](https://github.com/mahmedmo/reccify/blob/master/images/login.png))
-### Preference Selection Page
-![Screenshot 4]([/path/to/screenshot4.png](https://github.com/mahmedmo/reccify/blob/master/images/pref.png))
-### Home Page
-![Screenshot 5]([/path/to/screenshot5.png](https://github.com/mahmedmo/reccify/blob/master/images/home.png))
-### Help Page
-![Screenshot 6]([/path/to/screenshot6.png](https://github.com/mahmedmo/reccify/blob/master/images/help.png))
-### Account Page
-![Screenshot 7]([/path/to/screenshot7.png](https://github.com/mahmedmo/reccify/blob/master/images/account.png))
-### Saved Songs Page
-![Screenshot 8]([/path/to/screenshot8.png](https://github.com/mahmedmo/reccify/blob/master/images/savedsongs.png))
+## Welcome Page
+![alt text](https://github.com/mahmedmo/reccify/blob/master/images/welcome.png "Welcome Page")
+## Auth Page
+![alt text](https://github.com/mahmedmo/reccify/blob/master/images/auth.png "Auth Page")
+## Login Page
+![alt text](https://github.com/mahmedmo/reccify/blob/master/images/login.png "Login Page")
+## Preference Selection Page
+![alt text](https://github.com/mahmedmo/reccify/blob/master/images/pref.png "Preferences Page")
+## Home Page
+![alt text](https://github.com/mahmedmo/reccify/blob/master/images/home.png "Home Page")
+## Help Page
+![alt text](https://github.com/mahmedmo/reccify/blob/master/images/help.png "Help Page")
+## Account Page
+![alt text](https://github.com/mahmedmo/reccify/blob/master/images/account.png "Account Page")
+## Saved Songs Page
+![alt text](https://github.com/mahmedmo/reccify/blob/master/images/savedsongs.png "Saved Songs Page")
 
 
 
