@@ -73,8 +73,3 @@ Welcome to the Music Recommendation App! This Android application, developed usi
 ![alt text](https://github.com/mahmedmo/reccify/blob/master/images/savedsongs.png "Saved Songs Page")
 
 
-
-## License
-
-This project is licensed under the [License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
-
