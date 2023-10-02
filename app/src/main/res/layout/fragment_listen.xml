@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListenFragment"
+    android:background="@drawable/listenfragmentpage2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seek_to"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:progressTint="@android:color/white"
+
+            android:thumbTint="@android:color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/songBarGuideline"
+            app:layout_constraintDimensionRatio="11:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/likeButtonGuideline3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/songView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nosongloaded"
+            android:visibility="visible"
+
+            app:layout_constraintBottom_toTopOf="@+id/songViewGuideline3"
+            app:layout_constraintEnd_toEndOf="@+id/songViewGuideline2"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/songViewGuideline"
+            app:layout_constraintTop_toTopOf="@+id/songViewGuideline4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/playbutton"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/iconGuidlines"
+            app:layout_constraintEnd_toStartOf="@+id/likeButtonGuideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/likeButtonGuideline8"
+            app:layout_constraintTop_toTopOf="@+id/songBarGuideline"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/playbutton" />
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/pausebutton"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/play"
+            app:layout_constraintEnd_toEndOf="@+id/play"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/play"
+            app:layout_constraintTop_toTopOf="@+id/play"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/pausebutton" />
+
+        <ImageView
+            android:id="@+id/artist"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/artistbutton"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/artistButton"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@+id/artistButton"
+            app:layout_constraintStart_toStartOf="@+id/artistButton"
+            app:layout_constraintTop_toTopOf="@+id/artistButton"
+            app:srcCompat="@drawable/artistbutton" />
+
+        <ImageView
+            android:id="@+id/heartFilled"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/heartfilled"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/iconGuidlines"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@+id/saveButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/likeButtonGuideline9"
+            app:layout_constraintTop_toTopOf="@+id/songBarGuideline"
+            app:layout_constraintVertical_bias="0.512"
+            app:srcCompat="@drawable/heartfilled" />
+
+        <ImageView
+            android:id="@+id/heartEmpty"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/heartempty"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/iconGuidlines"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/songViewGuideline5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/saveButton"
+            app:layout_constraintTop_toTopOf="@+id/songBarGuideline"
+            app:layout_constraintVertical_bias="0.52"
+            app:srcCompat="@drawable/heartempty" />
+
+        <Button
+            android:id="@+id/trackName"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:text="Loading..."
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#57000000"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/iconGuidlines3"
+            app:layout_constraintEnd_toStartOf="@+id/songViewGuideline2"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/songViewGuideline"
+            app:layout_constraintTop_toTopOf="@+id/iconGuidlines2"
+            app:layout_constraintVertical_bias="0.639" />
+
+        <Button
+            android:id="@+id/helpButton"
+            android:layout_width="128dp"
+            android:layout_height="32dp"
+            android:alpha="0"
+            android:onClick="help"
+            android:text="Button"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/songViewGuideline6"
+            app:layout_constraintEnd_toStartOf="@+id/likeButtonGuideline5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/help"
+            app:layout_constraintTop_toTopOf="@+id/songViewGuideline7"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/artistButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:onClick="playArtist"
+            android:text="Button"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/iconGuidlines"
+            app:layout_constraintEnd_toStartOf="@+id/likeButtonGuideline5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/likeButtonGuideline7"
+            app:layout_constraintTop_toTopOf="@+id/songBarGuideline"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/playPauseButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:onClick="playback"
+            android:text="Button"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/play"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/likeButtonGuideline2"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="@+id/likeButtonGuideline8"
+            app:layout_constraintTop_toTopOf="@+id/play"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:onClick="saveTrack"
+            android:text="Button"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/heartEmpty"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/songViewGuideline5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/likeButtonGuideline9"
+            app:layout_constraintTop_toTopOf="@+id/songBarGuideline"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/likeButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:onClick="likeRequest"
+            android:scaleType="centerCrop"
+            android:text="Button"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/like"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/likeButtonGuideline6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/like"
+            app:layout_constraintTop_toTopOf="@+id/like"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/likeButtonGuideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.41"
+            app:layout_constraintDimensionRatio="1:1"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/likeButtonGuideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintGuide_percent="0.39" />
+
+        <Button
+            android:id="@+id/dislikeButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:onClick="dislikeRequest"
+            android:text="Button"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/dislike"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@+id/dislike"
+            app:layout_constraintHorizontal_bias="0.762"
+            app:layout_constraintStart_toStartOf="@+id/dislike"
+            app:layout_constraintTop_toTopOf="@+id/dislike"
+            app:layout_constraintVertical_bias="0.729" />
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/like"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/likeButtonGuideline3"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/likeButtonGuideline6"
+            app:layout_constraintStart_toStartOf="@+id/likeButtonGuideline5"
+            app:layout_constraintTop_toTopOf="@+id/likeButtonGuideline4"
+            app:layout_constraintVertical_bias="0.533" />
+
+        <ImageView
+            android:id="@+id/dislike"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/dislike"
+            android:visibility="invisible"
+
+
+            app:layout_constraintBottom_toTopOf="@+id/likeButtonGuideline3"
+
+
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@+id/likeButtonGuideline"
+
+            app:layout_constraintHorizontal_bias="0.0"
+
+
+            app:layout_constraintStart_toStartOf="@+id/likeButtonGuideline2"
+            app:layout_constraintTop_toTopOf="@+id/likeButtonGuideline4"
+            app:layout_constraintVertical_bias="0.139" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/likeButtonGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.77" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/likeButtonGuideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.76" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/likeButtonGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.62" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/likeButtonGuideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/likeButtonGuideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.13" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/likeButtonGuideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/likeButtonGuideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.665" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/songViewGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/songViewGuideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.86" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/songViewGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.905" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/songBarGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.795" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/songViewGuideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.574" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/songViewGuideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1175" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/songViewGuideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/songViewGuideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/iconGuidlines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.89" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/iconGuidlines2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/iconGuidlines3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/helpbutton"
+            app:layout_constraintBottom_toBottomOf="@+id/helpButton"
+            app:layout_constraintEnd_toStartOf="@+id/likeButtonGuideline8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/songViewGuideline"
+            app:layout_constraintTop_toTopOf="@+id/helpButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

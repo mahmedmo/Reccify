@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/ic_saved_music"
+        android:title="" />
+
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/ic_listen"
+        android:title="" />
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/ic_account"
+        android:title="" />
+</menu>
