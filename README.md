@@ -1,7 +1,7 @@
 # reccify
 # Music Recommendation App
 
-Welcome to the Music Recommendation App! This Android application, developed using Java on Android Studio, provides personalized music recommendations based on user preferences and Spotify data.
+Welcome to Reccify! This Android application, developed using Java on Android Studio, provides personalized music recommendations based on user preferences and Spotify data.
 
 ## Features
 
